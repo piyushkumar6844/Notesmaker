@@ -11,7 +11,7 @@ const  Signup=(props)=> {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const {name,email,password}=credentials;
-        const response = await fetch("http://localhost:5000/api/auth/saveData", {
+        const response = await fetch("http://192.168.45.116:3000/api/auth/saveData", {
             
             method: 'POST',
 

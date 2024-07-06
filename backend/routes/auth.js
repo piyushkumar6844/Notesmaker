@@ -7,8 +7,8 @@ var jwt = require('jsonwebtoken');
 var userfetching = require('../middleware/userfetching');
 const { check, validationResult }
     = require('express-validator');
-
-const JWT_SECRET = 'cnkdnvkrmnkvr';
+    require('dotenv').config();
+const JWT_SECRET =process.env.JWT_SECRET ;
 // creating a new user 
 
 

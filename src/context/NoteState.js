@@ -2,7 +2,7 @@ import NoteContext from "./NoteContext";
 import { useState } from "react";
  
 const NoteState = (props) => {
-   const host = "http://192.168.45.116:3000"
+   const host = "https://check-vrss.onrender.com"
    const notesInitial = []
    const [notes, setNotes] = useState(notesInitial)
    const [user, setuser] = useState(null)
